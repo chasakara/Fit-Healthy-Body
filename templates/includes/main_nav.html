@@ -19,10 +19,10 @@
                 Fitness
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="fitness-link">
-                <a href="" class="dropdown-item">Exercise bikes &amp; Essentials</a>
-                <a href="" class="dropdown-item">Trademills</a>
-                <a href="" class="dropdown-item">Cross trainers </a>
-                <a href="" class="dropdown-item">Climbers and Steppers </a>
+                <a href="{% url 'products' %}?category=exercise_bikes" class="dropdown-item">Exercise Bikes </a>
+                <a href="{% url 'products' %}?category=trade_mills" class="dropdown-item">Trademills</a>
+                <a href="{% url 'products' %}?category=cross_trainers" class="dropdown-item">Cross trainers </a>
+                <a href="{% url 'products' %}?category=climbers" class="dropdown-item">Climbers and Steppers </a>
             </div>
         </li>
         <li class="nav-item dropdown">
