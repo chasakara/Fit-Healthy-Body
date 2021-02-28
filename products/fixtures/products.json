@@ -1,0 +1,1 @@
+[{"pk": 1, "model": "products.product", "fields": {"sku": "", "name": "back spring strecher", "description": "a very good way to enlarge your bicep and make it strong", "price": 53.99, "category": 6, "rating": 4.6, "image_url": "", "image": ""}}]
