@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+<div class="container">
+    <p>
+    <h2>Blogs</h2>
+    </p>
+    <div>
+        <a href="{% url 'add_blog' %}">
+            <p class="">Share your archivemnets with others on how our products help you archive your goals</p>
+        </a>
+    </div>
+    {% for blog in allblogs %}
+    <div class="article">
+        <h3><a href="{% url 'blog_detail' blog.id %}">{{ title }}</a></h3>
+        <p>{{ content }}</p>
+
+    </div>
+    {% endfor %}
+    {% endblock  %}
+</div>
