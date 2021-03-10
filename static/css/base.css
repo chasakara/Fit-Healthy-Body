@@ -2,11 +2,13 @@ html {
     height: 100%;
 }
 
+.child {
+  margin: 0 auto;
+}
+
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
-    background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: black;
     font-family: 'Lato';
 }
 
@@ -291,3 +293,20 @@ input[name='q']::placeholder {
         height: calc(100vh - 116px);
     }
 }
+
+image-logo {width: 360;
+            height: 100;
+}
+
+color {background-color: red;}
+color-2 {background-color: green;}
+color-3 {background-color: blue;}
+
+/* --- Home Page --- */
+
+home-page {padding-top: 100px;}
+
+blog-container-style {padding: 100px;
+                      border: 1px solid lightblue ;}
+
+home-page-div {height: 50px;}

@@ -3,10 +3,11 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category
+from .models import Product, Category, ProductReview
 from .forms import ProductForm
 
 # Create your views here.
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -66,6 +67,13 @@ def product_detail(request, product_id):
     context = {
         'product': product,
     }
+
+    if request.method == 'POST' and request.user.is_authenticated:
+        content = request.POST.get('content', '')
+
+        review = ProductReview.objects.creates(product=product, user=request.user, content=content)
+
+        return redirect('product_detail', product_id=product_id)
 
     return render(request, 'products/product_detail.html', context)
 

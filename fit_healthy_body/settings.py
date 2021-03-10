@@ -32,10 +32,12 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'blog',
     'bag',
     'checkout',
     'crispy_forms',
     'profiles',
+    'reviews',
     'storages',
 ]
 
@@ -186,7 +188,7 @@ if 'USE_AWS' in os.environ:
 
 FREE_DELIVERY_THRESHOLD = 600
 STANDARD_DELIVERY_PERCENTAGE = 7.5
-STRIPE_CURRENCY = 'euro'
+STRIPE_CURRENCY = 'usd'
 STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', '')
 STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <div class=" container-fluid collapse navbar-collapse" id="main-nav">
-    <ul class="navbar-nav w-auto mx-auto">
+    <ul class="navbar-nav mx-auto w-auto ">
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,9 +31,9 @@
                 Strength
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="strength-link">
-                <a href="" class="dropdown-item">Multi gyms </a>
-                <a href="" class="dropdown-item">Weigh benches </a>
-                <a href="" class="dropdown-item">Plate loaded</a>
+                <a href="{% url 'products' %}?category=kettle_bells" class="dropdown-item"> Kettle Bells </a>
+                <a href="{% url 'products' %}?category=dumb_bells" class="dropdown-item"> Dumb Bells </a>
+                <a href="{% url 'products' %}?category=weights" class="dropdown-item"> Weights </a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -42,10 +42,9 @@
                 Functional
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="functional-link">
-                <a href="" class="dropdown-item"> Battle ropes </a>
-                <a href="" class="dropdown-item"> Sand bag weights </a>
-                <a href="" class="dropdown-item"> Pylometric boxes </a>
-                <a href="" class="dropdown-item"> Gym balls</a>
+               <a href="{% url 'products' %}?category=battle_ropes" class="dropdown-item"> Battle ropes </a>
+                <a href="{% url 'products' %}?category=sand_bag" class="dropdown-item"> Sand bag  </a>
+               
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -54,10 +53,8 @@
                 Nutrients
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="nutrients-link">
-                <a href="" class="dropdown-item"> Barbells</a>
-                <a href="" class="dropdown-item"> Bumper plates </a>
-                <a href="" class="dropdown-item">Weight plates </a>
-                <a href="" class="dropdown-item">Weight sets</a>
+                 <a href="{% url 'products' %}?category=muscle_nutrients" class="dropdown-item"> Muscle nutrients  </a>
+              
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -68,8 +65,6 @@
             <div class="dropdown-menu border-0" aria-labelledby="nutrient-plan-link">
                 <a href="" class="dropdown-item"> Barbells</a>
                 <a href="" class="dropdown-item"> Bumper plates </a>
-                <a href="" class="dropdown-item">Weight plates </a>
-                <a href="" class="dropdown-item">Weight sets</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -78,11 +73,14 @@
                 Exercise plan
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="exercise-link">
-                <a href="" class="dropdown-item"> Barbells</a>
-                <a href="" class="dropdown-item"> Bumper plates </a>
-                <a href="" class="dropdown-item">Weight plates </a>
-                <a href="" class="dropdown-item">Weight sets</a>
+                <a href="{% url 'products' %}?category=fat_loss" class="dropdown-item"> Fat loss</a>
+                <a href="{% url 'products' %}?category=muscle_nutrients" class="dropdown-item"></a> Bumper plates
             </div>
+        </li>
+        <li>
+            <div>
+             <a class="logo-font font-weight-bold nav-link text-black" href="{% url 'allblogs' %}"> Blog </a>
+             </div>
         </li>
     </ul>
 </div>
