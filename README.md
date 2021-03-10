@@ -18,6 +18,16 @@ Card number: 4242 4242 4242 4242
 
 Zip & CCV: any integer values are valid
 
+## Technnologies used
+
+##### HTML
+##### CSS 
+##### JAVASCRIPT
+##### DJANNGO
+##### STRIPE
+##### AWS3
+
+
 ## Deployment
 
 ### Local Deployment
