@@ -18,14 +18,67 @@ Card number: 4242 4242 4242 4242
 
 Zip & CCV: any integer values are valid
 
+### Wireframes 
+
+[Wireframes](https://c14b6c1d-0386-44b5-9bef-ce64ddf62c2b.ws-eu03.gitpod.io/files/download/?id=1b302be3-2173-4eb5-9c35-2a3f7d52b49b)
+
 ## Technnologies used
 
-##### HTML
-##### CSS 
-##### JAVASCRIPT
-##### DJANNGO
-##### STRIPE
-##### AWS3
+### Languages used
+
+##### HTML5
+##### CSS3
+##### JavaScript
+#####  Python
+
+### Frameworks, Libraries & Programs
+Django
+
+Python Web framework used to build the site.
+Git
+
+Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
+GitHub
+
+GitHub is used to store the project code after being pushed from Git.
+Heroku
+
+Heroku is the app platform I deployed my project to.
+Heroku Postgres
+
+Heroku’s reliable and powerful database used to store the data for my deployed Heroku App.
+jQuery:
+
+A javascript library used to simplify DOM manipulation.
+Bootstrap 4.5.3
+
+Bootstrap was used to assist with the responsiveness and styling of the website using design templates.
+Boto3
+
+Python SDK for AWS, used to directly create, update, and delete AWS resources from my Python scripts.
+gunicorn
+
+WSGI server used to take care of everything happening between the web server and web application.
+pillow
+
+Python Imaging Library (PIL), used to add support for opening, manipulating, and saving images.
+psycopg2
+
+PostgreSQL database adapter
+
+AWS
+
+A cloud-based storage service used to store static and, media files.
+Stripe
+
+Stripe was used to deal with payments.
+
+Temp Mail
+
+Temp Mail was used to provide temporary, secure, anonymous, free, disposable email addresses for testing purposes.
+Google fonts
+
+Google fonts were used to import the fonts into the CSS file which is used on all pages throughout the project.
 
 
 ## Deployment
