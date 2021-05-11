@@ -6,11 +6,11 @@ It is a website that sell fitness equipment, nutrients plans to make your body h
 
 ##### Member Login
 
-Username: gitpod
+Username: tinashe
 
 Email: tinashechasakara@gmail.com
 
-Password: 
+Password: Deca5959
 
 Card payments
 
@@ -18,7 +18,81 @@ Card number: 4242 4242 4242 4242
 
 Zip & CCV: any integer values are valid
 
+### User profiles
+
+#### Site Visitor 
+As a site visitor, I want to be able to easily navigate around the site and gain a clear insight into its purpose. I would like to be able to browse the services and products on offer with the option to purchase and the option to register as a member for more resources.
+
+#### Site Member
+ As a site member, I want to be part of a community where I can interact with other members around key topics to share each other's knowledge, experience, and progress. I would like to have my own user profile to store my personal details and order history, and the ability to easily log in and out of the site.
+
+#### Site Owner
+ As the site owner, I want to be able to continually monitor and update the site to manage my user's expectations. I would like the ability to easily add, edit and delete products to ensure my site is always up to date and relevant. I want to provide a customer review option, to gain feedback for improvements, and to develop a sense of transparency to gain consumer loyalty and trust.
+
 ### Wireframes 
+
+## Features used
+
+Responsive on all device sizes
+
+Mobile-first design, responsive on all devices through using the Bootstrap grid system and CSS media queries.
+A user-friendly interface with easy navigation throughout the site
+
+Attractive, minimalistic design with visuals and information presented clearly and concisely.
+
+Easily readable fonts and simple navigation throughout the site.
+
+Fixed navigation bar visible on every page featuring a dropdown menu, easily recognisable icons and brand logo to link back to the homepage.
+Search bar accessible from every page allowing the user to easily search the site by keywords.
+Clear interactive buttons used for an effortless user journey throughout the site.
+Toasts used throughout the site to display alert messages to the user to assist on their journey.
+Home
+
+Home
+
+#### Products
+sort and filter functionality to allow users to easily find products they are looking for.
+Card listings have been used to display product image, name, price and rating.
+
+####  Product Detail
+crispy forms used for elegant formatting.
+Size selector option for sized products to allow user to select a size.
+Quantity selector option to allow user to select a quantity.
+add to bag button to allow user to add the product to bag.
+
+#### Product Admin
+Forms have been used to allow the admin user to add and edit products manually on the site.
+
+#### Bag
+A fully functioning shopping bag allowing users to add both products and programmes they wish to buy
+Quantity selector with option to update or remove item from bag
+Clear Secure Checkout button to take user to checkout
+An arrow displayed at the bottom of the bag to easily direct the user back to the navigation options
+
+#### Checkout
+A order summary displaying all the items the user has in their bag ready to purchase.
+crispy forms used for elegant formatting.
+Forms used to display personal, delivery and payment fields.
+Option for user to click 'Save this delivery information to my profile' to save details to their profile page.
+Stripe payments used to manage site card transactions.
+
+#### Checkout Success
+The checkout success page provides reassurance for the user that their purchase has gone through and displays all their order details.
+Order confirmation sent to the user's personal email after they complete checkout.
+
+#### Blog
+A Blog was added so that users who have used our products can testify how they have changed their heatlhty be it mentally or physically. Users can also share how best to use the product.
+
+#### Profile
+crispy forms used for elegant formatting.
+Forms used to display users personal details.
+Option for user to click 'update details' to save details to profile.
+A table has been used to display the user's order history including order number, order date and order total. There is also a button 'view order details' which links to the checkout success page showing the specific order details.
+
+#### Authorisation
+All authorisation pages including register, login and logout have been implemented through Django allauth account. CSS styling has been applied to ensure pages match the sites overall design spec.
+
+Social login has been implemented through Django allauth socialaccount giving the user the option to login through Google, Facebook or Twitter.
 
 [Wireframes](https://c14b6c1d-0386-44b5-9bef-ce64ddf62c2b.ws-eu03.gitpod.io/files/download/?id=1b302be3-2173-4eb5-9c35-2a3f7d52b49b)
 
@@ -31,55 +105,76 @@ Zip & CCV: any integer values are valid
 ##### JavaScript
 #####  Python
 
-### Frameworks, Libraries & Programs
-Django
+#### Frameworks, Libraries & Programs
 
-Python Web framework used to build the site.
-Git
+[Django](https://www.djangoproject.com/)
 
-Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
-GitHub
+* Python web framework used to build the site.
 
-GitHub is used to store the project code after being pushed from Git.
-Heroku
+[Git](https://git-scm.com/)
 
-Heroku is the app platform I deployed my project to.
-Heroku Postgres
+* Git was used for version control by utilizing the Gitpod terminal to commit to Git and push to GitHub.
 
-Heroku’s reliable and powerful database used to store the data for my deployed Heroku App.
-jQuery:
+[GitHub](https://github.com/)
 
-A javascript library used to simplify DOM manipulation.
-Bootstrap 4.5.3
+* GitHub is used to store the project code after being pushed from Git.
 
-Bootstrap was used to assist with the responsiveness and styling of the website using design templates.
-Boto3
+[Heroku](https://id.heroku.com/)
 
-Python SDK for AWS, used to directly create, update, and delete AWS resources from my Python scripts.
-gunicorn
+* Heroku is the app platform I deployed my project to.
+Heroku Postgres.Heroku’s reliable and powerful database used to store the data for my deployed Heroku App.
 
-WSGI server used to take care of everything happening between the web server and web application.
-pillow
+[jQuery](https://jquery.com/)
 
-Python Imaging Library (PIL), used to add support for opening, manipulating, and saving images.
-psycopg2
+* A javascript library used to simplify DOM manipulation.
 
-PostgreSQL database adapter
+[Bootstrap 4.5.3](https://getbootstrap.com/)
 
-AWS
+* Bootstrap was used to assist with the responsiveness and styling of the website using design templates.
 
-A cloud-based storage service used to store static and, media files.
-Stripe
+[Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
 
-Stripe was used to deal with payments.
+* Python SDK for AWS, used to directly create, update, and delete AWS resources from my Python scripts.
 
-Temp Mail
+[gunicorn](https://gunicorn.org/)
 
-Temp Mail was used to provide temporary, secure, anonymous, free, disposable email addresses for testing purposes.
-Google fonts
+* WSGI server used to take care of everything happening between the web server and web application.
+
+[Pillow](https://pypi.org/project/Pillow/2.2.1/)
+
+* Python Imaging Library (PIL), used to add support for opening, manipulating, and saving images.
+
+[psycopg2](https://pypi.org/project/psycopg2/)
+
+* PostgreSQL database adapter
+
+[AWS](https://aws.amazon.com/)
+
+* A cloud-based storage service used to store static and, media files.
+
+[Stripe](https://stripe.com/gb)
+
+* Stripe was used to deal with payments.
+
+[Temp Mail](https://temp-mail.org/en/)
+
+* Temp Mail was used to provide temporary, secure, anonymous, free, disposable email addresses for testing purposes.
+
+[Google fonts](https://fonts.google.com/)
 
 Google fonts were used to import the fonts into the CSS file which is used on all pages throughout the project.
 
+[Font Awesome 4.7.0](https://fontawesome.com/)
+
+* Font Awesome was used to add icons for aesthetic and UX purposes.
+
+[HTML Formatter](https://www.freeformatter.com/html-formatter.html) and [CSS Formatter](https://www.freeformatter.com/css-beautifier.html)
+
+* Used to format my HTML and CSS files with the desired indentation level for optimal readability.
+
+[Techsini](http://techsini.com/multi-mockup/index.php)
+
+* Multi Device Website Mockup Generator Tool
 
 ## Deployment
 
