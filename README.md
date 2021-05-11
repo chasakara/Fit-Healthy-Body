@@ -106,7 +106,7 @@ Before building my site I set up a list of user stories to help guide the develo
 
 ##### Discover Fit Healthy Body  
 
-I made a home page with very few images that links to products and programs. this was done so that the user will know what the site is all about and will easily navigate to the products and programms right away and alos see other users experience who have used our products through the blog. 
+I made a home page with very few images that links to products and exercise or nutrients . this was done so that the user will know what the site is all about and will easily navigate to the products and programms right away and alos see other users experience who have used our products through the blog. 
 
 ##### View a list of products
 
