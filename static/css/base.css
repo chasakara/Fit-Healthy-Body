@@ -267,6 +267,9 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+/* product detail */
+dlt-product-button {color: white;}
+
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -310,3 +313,7 @@ blog-container-style {padding: 100px;
                       border: 1px solid lightblue ;}
 
 home-page-div {height: 50px;}
+
+/* --- Login Page --- */
+
+login-centering {margin: 0 auto;}
