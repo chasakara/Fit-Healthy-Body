@@ -96,6 +96,129 @@ All authorisation pages including register, login and logout have been implement
 
 Social login has been implemented through Django allauth socialaccount giving the user the option to login through Google, Facebook or Twitter.
 
+## Testing user stories
+
+Before building my site I set up a list of user stories to help guide the development of different parts of my application. This made it easier to add features and functionality with the end-user in mind by describing the type of user what they want and why. 
+
+### View user stories checklist
+
+#### Viewing and Navigation
+
+##### Discover Fit Healthy Body  
+
+I made a home page with very few images that links to products and programs. this was done so that the user will know what the site is all about and will easily navigate to the products and programms right away and alos see other users experience who have used our products through the blog. 
+
+##### View a list of products
+
+I created a 'products' page including a list of all products, displaying product image, name, price, and rating, with the option to select an individual card for more details. This page is accessible via the main nav menu.
+
+##### View a list of exercise and nutrients plans
+
+I created a 'exercise and nutrients plans' page including a list of all programmes, displaying programme image, name, price, and rating, with the option to select an individual card for more details. This page is accessible via the main nav menu
+
+##### View individual product details
+
+Each product detail page displays the product's image, name, price, rating, description, and available sizes. There is also a quantity selector, the ability to add a product to their bag and the option to redirect back to the products page
+
+##### View individual exercise or nutrients plans details
+
+Each exercise or nutrients plans detail page displays the programme's image, name, price, rating, description, what's included, and reviews. There is also a quantity selector, the ability to add a programme to their bag and the option to redirect back to the programmes page.
+
+##### Browse associated blogs
+
+I created a blog app that anyone who visit the website can read about how our products have helped other users archived their goals and how it has changed their healthy be it physically or mentallly 
+
+#### Registration and user accounts
+
+##### Easily register for an account
+
+A fully functioning 'Register' page where a user can enter their details to create an account. 
+
+##### Receive an email confirmation after registering
+
+After registering the user is directed to a registration success page where they are informed that they will receive an email to validate their email address and complete registration.
+
+##### Easily login or logout
+
+When a user is registered they have the ability to easily log into their account. The user can click on the profile icon, then select login and enter their details to sign into their account. Once logged in the user will be able to log out via the profile icon.
+
+##### Easily update my personal details
+
+Each registered user has their own profile page where they can store their personal details including name, email, and delivery details. This information can be easily updated by filling in any field and then clicking 'update details'.
+
+##### Easily recover my password in case I forget it
+
+If a user forgets their password they have the option to click the 'Forgot Password?' link. This will direct them to another page which will inform the user that an email has been sent to them to recover their password. The email contains a link that redirects the user to the change password page where they can enter a new password for their account. After submitting a new password the user is redirected to the login page and can log in using their new password.
+
+##### Have a personalised user profile
+
+The profile page is specific to each user with a personalised username greeting, the option to save their own entered details, and a log of their order history.
+
+##### Enable my details to be prefilled
+
+If the user has filled in their profile information, these details will be prefilled at checkout. The user also has the option to tick the save details options on checkout which will automatically save details to their profile page.
+
+##### Sorting and Searching
+
+17. Sort and filter the list of available products
+
+I have added a sort and filter option to the products page to allow a user to easily find what they are looking for. There is a 'Clear all' option at the top of the filter dropdown which allows a user to remove the filter and display all items.
+
+##### Search the site by keywords
+
+A search bar features in the main site header and allows users to search by keywords to find specific items. On larger screens the search bar is visible and on smaller devices, the search bar is collapsed from the search icon.
+
+The filtered queries include product name, product description, programme name, programme description, and blog post title.
+'icontains' has been used making the search case-insensitive. Although some results aren't always seen as logical I wanted to continue to use icontains over iexact as it creates a more flexible search. As the site develops I will look into other ways of creating a more robust search.
+
+##### Easily see what I’ve searched for and the number of results
+
+The products, programmes and blog page all feature a results count to show the user how many items are available to them. (View user story 17 and 18 for screenshots)
+
+##### Purchasing and checkout
+
+Easily select the size and quantity of a product when purchasing it.
+The product detail page allows a user to select a specific size, if the product is sized, and the quantity of a product. The programme detail page allows a user to select a quantity of a programme to add to their bag.
+
+##### View items in my bag to be purchased
+
+The bag view allows the user to view all the products and programmes they have added to their bag before continuing to the checkout.
+
+##### Adjust the quantity of individual items in my bag
+
+The user has the ability to adjust the number of products and programmes in their bag before continuing to checkout.
+
+##### Easily enter my payment information and feel my personal and payment information is safe and secure
+
+The checkout page features a payment form allowing the user to easily enter their card details for a quick checkout.
+
+##### View an order confirmation after checkout
+
+Once the user has made a purchase they are directed to a checkout success page where they can see a summary of their order and check for any mistakes.
+
+##### Receive an email confirmation after checking out
+
+Once the user has made a purchase they are sent an email with a summary of their order to keep for their own records.
+
+#### Admin and Store Management
+
+##### Add a product
+
+When logged in as the admin user, the user has the option of 'Product management' when clicking on the profile icon on the main site header. After clicking the link they are directed to a page displayed with a form to enter all the information needed to add a new product. Once the user has finished adding the product details they can click 'Add Product' and will be redirected to the product detail page for the new item.
+
+##### Edit/Update a product
+
+When logged in as admin user, the user has an edit button displayed under each product card on the products page, as well as on each product detail page. After clicking 'Edit' from either view the user is directed to the edit product page which is a pre-filled out form allowing the fields to be amended manually from the site. Once the user has finished with their edits they can click 'Update Information' and the new product information will be saved, and they will be redirected back to the product detail page.
+
+
+
+##### Delete a product
+
+When logged in as admin user, the user has a delete button displayed next to the edit button. After clicking 'Delete' from either view, the product is removed from the site but will still be available in the admin.
+
+The delete functionality was updated so the item was only visually removed from the site instead of permanently deleted, to fix a bug I came across (more details on this included in the 'Bugs' section). This also allows the site owner to keep all their items stored on the database if needed in the future.
+
+
 [Wireframes](https://c14b6c1d-0386-44b5-9bef-ce64ddf62c2b.ws-eu03.gitpod.io/files/download/?id=1b302be3-2173-4eb5-9c35-2a3f7d52b49b)
 
 ## Technnologies used
