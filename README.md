@@ -2,6 +2,8 @@
 
 It is a website that sell fitness equipment, nutrients plans to make your body heatlhty and be physically fit, exercise plans were you will follow a well devised plan on what type of exercise you have to do to target different parts of the body
 
+The website can be found here [Fit Healthy Body](https://fit-healthy-body.herokuapp.com/)
+
 #### For testing the following credentials can be used:
 
 ##### Member Login
@@ -100,10 +102,13 @@ Social login has been implemented through Django allauth socialaccount giving th
 
 ### Languages used
 
-##### HTML5
-##### CSS3
-##### JavaScript
-#####  Python
+[HTML5](https://en.wikipedia.org/wiki/HTML5)
+
+[CSS3](https://en.wikipedia.org/wiki/CSS)
+
+[JavaScript](https://www.javascript.com/)
+
+[Python](https://www.python.org/)
 
 #### Frameworks, Libraries & Programs
 
