@@ -66,7 +66,7 @@ add to bag button to allow user to add the product to bag.
 Forms have been used to allow the admin user to add and edit products manually on the site.
 
 #### Bag
-A fully functioning shopping bag allowing users to add both products and programmes they wish to buy
+A fully functioning shopping bag allowing users to add both products and exercise or nutrients they wish to buy
 Quantity selector with option to update or remove item from bag
 Clear Secure Checkout button to take user to checkout
 An arrow displayed at the bottom of the bag to easily direct the user back to the navigation options
@@ -114,7 +114,7 @@ I created a 'products' page including a list of all products, displaying product
 
 ##### View a list of exercise and nutrients plans
 
-I created a 'exercise and nutrients plans' page including a list of all programmes, displaying programme image, name, price, and rating, with the option to select an individual card for more details. This page is accessible via the main nav menu
+I created a 'exercise and nutrients plans' page including a list of all exercise or nutrients , displaying exercise or nutrients  image, name, price, and rating, with the option to select an individual card for more details. This page is accessible via the main nav menu
 
 ##### View individual product details
 
@@ -122,7 +122,7 @@ Each product detail page displays the product's image, name, price, rating, desc
 
 ##### View individual exercise or nutrients plans details
 
-Each exercise or nutrients plans detail page displays the programme's image, name, price, rating, description, what's included, and reviews. There is also a quantity selector, the ability to add a programme to their bag and the option to redirect back to the programmes page.
+Each exercise or nutrients plans detail page displays the exercise or nutrients 's image, name, price, rating, description, what's included, and reviews. There is also a quantity selector, the ability to add a exercise or nutrients  to their bag and the option to redirect back to the exercise or nutrients  page.
 
 ##### Browse associated blogs
 
@@ -168,25 +168,25 @@ I have added a sort and filter option to the products page to allow a user to ea
 
 A search bar features in the main site header and allows users to search by keywords to find specific items. On larger screens the search bar is visible and on smaller devices, the search bar is collapsed from the search icon.
 
-The filtered queries include product name, product description, programme name, programme description, and blog post title.
+The filtered queries include product name, product description.
 'icontains' has been used making the search case-insensitive. Although some results aren't always seen as logical I wanted to continue to use icontains over iexact as it creates a more flexible search. As the site develops I will look into other ways of creating a more robust search.
 
 ##### Easily see what I’ve searched for and the number of results
 
-The products, programmes and blog page all feature a results count to show the user how many items are available to them. (View user story 17 and 18 for screenshots)
+The products feature a results count to show the user how many items are available to them. 
 
 ##### Purchasing and checkout
 
 Easily select the size and quantity of a product when purchasing it.
-The product detail page allows a user to select a specific size, if the product is sized, and the quantity of a product. The programme detail page allows a user to select a quantity of a programme to add to their bag.
+The product detail page allows a user to select a specific size, if the product is sized, and the quantity of a product. 
 
 ##### View items in my bag to be purchased
 
-The bag view allows the user to view all the products and programmes they have added to their bag before continuing to the checkout.
+The bag view allows the user to view all the products they have added to their bag before continuing to the checkout.
 
 ##### Adjust the quantity of individual items in my bag
 
-The user has the ability to adjust the number of products and programmes in their bag before continuing to checkout.
+The user has the ability to adjust the number of products in their bag before continuing to checkout.
 
 ##### Easily enter my payment information and feel my personal and payment information is safe and secure
 
@@ -361,19 +361,11 @@ A success toast message is present after clicking the 'Confirm' button
 
 When logged in as Admin user...
 
-The 'Programme Management' option is available in the Profile menu
-
 When input is missing in a required field there is an error response
 
 When input format is incorrect the field validation errors are present
- 
-After successfully adding a new programme I am redirected to the 'Programme Detail' page with the correct information and success toast
 
 If no image is added to the form submission, the expected 'no image' png file is present
-
-The 'Edit' button is visible on the 'Programmes' page and each 'Programme Detail' page
-
-Clicking the 'Edit' button directs the user to the 'Edit Programme' page with fields prefilled with current information
 
 An info toast message is present after clicking the 'Edit' button
 
@@ -381,20 +373,9 @@ After selecting an image the file name appears as expected
 
 Selecting 'Remove' and saving changes removes current image as expected
 
-
-After submitting the Edit form user is redirected to the 'Programme Detail' page with the updated information and success toast
-
-The 'Delete' button is visible on the 'Programmes' page and each 'Programme Detail' page
-
-After clicking the 'Delete' button the programme is no longer visible on the site
-
-After clicking the 'Delete' button the programme is still available in Django admin
-
 #### Bag
 
 After adding to bag all details are listed in the bag template as expected.
-
-To ensure the type of item added to the bag was correct I had to add category to my bag session to differentiate the products from programmes.
 
 Clicking 'Keep Shopping' navigates the user back to the 'Products' page
 
