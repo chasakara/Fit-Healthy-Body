@@ -218,6 +218,261 @@ When logged in as admin user, the user has a delete button displayed next to the
 
 The delete functionality was updated so the item was only visually removed from the site instead of permanently deleted, to fix a bug I came across (more details on this included in the 'Bugs' section). This also allows the site owner to keep all their items stored on the database if needed in the future.
 
+### Manual function testing
+
+To ensure my site was working correctly I carried out manual function testing on all my apps;
+
+#### General
+
+ Font styling changes as expected when hovering over my button elements
+
+ Cursor pointer is present when hovering button and link elements
+
+ User is directed to a custom 404 page if directed to a non-existent domain
+
+#### Navigation bar
+
+The user can toggle the menu by clicking on the menu/close icon
+
+Clicking the brand logo from any page on the site navigates the user back to the homepage
+
+The user can close the menu when open by clicking outside the menu area
+ 
+The 'Products' link on main dropdown menu directs the user to the 'Products' page displaying all products
+
+The 'Nutrients' link on main dropdown menu directs the user to the 'Nutrients' page displaying all Neutrients plans 
+
+Search bar showing the correct format based on device size
+
+After inputting keywords and hitting enter or the search icon, user is directed to the search page template with appropriate results
+
+If user enters a keyword with no results the correct message is displayed
+
+If user submits a search with no keywords they are directed to the search page with no results and receive a warning message
+
+When not logged in, under the profile icon user has the options of 'Register' and 'Login'
+
+When logged in, under the profile icon user has the options of 'My Profile' and 'Logout'
+
+When logged in as admin, under the profile icon user has the added options of 'Product Management'
+
+All links displayed on the profile dropdown menu direct the user to the expected page
+
+When the bag icon is clicked user is directed to the bag template
+
+Before adding to bag, user is directed to the correct empty bag template
+
+After adding to bag, user is directed to the bag template displaying the items they have added
+
+### Sort and filter
+
+The sort functionality returns items in the order expected.
+ 
+The filter functionality returns only items matching the chosen criteria
+
+If the user filters then sorts, the filtered items are displayed in order as expected
+
+### Authorisation
+
+On the 'Register' page, if the user clicks 'Sign in' they are redirected to the 'Login' page
+
+If the user completes the registration form with non-existent user details their registration is successful
+
+After successful registration the user is navigated to the 'Verification email sent' page and an email is sent to the user with link to confirm
+
+After user clicks link in email they are redirected to 'Verify your email' page
+
+After user clicking 'Confirm' on verify your email' page they receive a success message and are redirected to the login page
+
+If the user completes the registration form with an already registered username and password they receive an error message
+
+On the login page, if the user clicks 'Sign up' they are redirected to the 'Register' page
+
+If the user completes the login form with an already registered username and password they are logged in successfully
+
+If the user completes the login form with non-existent user details they receive an error message
+
+If the user clicks 'Forgot password?' they are directed to the forgot password page as expected
+
+If the user enters their email and clicks 'Reset my password' they are directed to the password reset page as expected
+
+If the user enters their email and clicks 'Reset my password' they receive an email with a link to reset their password
+ 
+After user clicks the link in their email they are redirected to the 'Change password' page
+
+After submitting a new password the user is presented with a success message 'Your password is now changed' and they can log in with their new password
+ 
+If the user clicks 'Remember me' their username and password is automatically available next time logging in
+
+If a user is logged in, the 'Logout' option is visible in the profile icon menu
+
+If a user clicks 'Logout' they are directed to the 'Logout' page where they can confirm their action
+
+#### Products
+
+Each product card directs the user to the 'Product Detail' page displaying the correct information
+
+Clicking the increment and decrement on the quantity selector changes the value as expected
+
+User can not decrement below 0 or increment above 99
+
+User can not type in a value out of the range 1-99
+
+Selecting a value from the size selector dropdown updates the field correctly
+
+Product is added to the bag successfully after clicking 'Add to bag'
+
+If product is already in bag, quantity is incremented and product is not duplicated
+Admin
+
+When logged in as Admin user...
+
+The 'Product Management' option is available in the Profile menu
+
+When input is missing in a required field there is an error response
+
+When input format is incorrect the field validation errors are present
+
+After successfully adding a new product I am redirected to the 'Product Detail' page with the correct information and success toast
+
+If no image is added to the form submission, the expected 'no image' png file is present
+
+The 'Edit' button is visible on the 'Products' page and each 'Product Detail' page
+
+Clicking the 'Edit' button directs the user to the 'Edit Product' page with fields prefilled with current information
+
+An info toast message is present after clicking the 'Edit' button
+
+After selecting an image the file name appears as expected
+
+Selecting 'Remove' and saving changes removes current image as expected
+
+After submitting the Edit form user is redirected to the 'Product Detail' page with updated the information and success toast
+
+The 'Delete' button is visible on the 'Products' page and each 'Product Detail' page
+
+After clicking the 'Delete' button the product is no longer visible on the site
+
+After clicking the 'Delete' button the product is still available in the admin
+
+A success toast message is present after clicking the 'Confirm' button
+
+#### Admin
+
+When logged in as Admin user...
+
+The 'Programme Management' option is available in the Profile menu
+
+When input is missing in a required field there is an error response
+
+When input format is incorrect the field validation errors are present
+ 
+After successfully adding a new programme I am redirected to the 'Programme Detail' page with the correct information and success toast
+
+If no image is added to the form submission, the expected 'no image' png file is present
+
+The 'Edit' button is visible on the 'Programmes' page and each 'Programme Detail' page
+
+Clicking the 'Edit' button directs the user to the 'Edit Programme' page with fields prefilled with current information
+
+An info toast message is present after clicking the 'Edit' button
+
+After selecting an image the file name appears as expected
+
+Selecting 'Remove' and saving changes removes current image as expected
+
+
+After submitting the Edit form user is redirected to the 'Programme Detail' page with the updated information and success toast
+
+The 'Delete' button is visible on the 'Programmes' page and each 'Programme Detail' page
+
+After clicking the 'Delete' button the programme is no longer visible on the site
+
+After clicking the 'Delete' button the programme is still available in Django admin
+
+#### Bag
+
+After adding to bag all details are listed in the bag template as expected.
+
+To ensure the type of item added to the bag was correct I had to add category to my bag session to differentiate the products from programmes.
+
+Clicking 'Keep Shopping' navigates the user back to the 'Products' page
+
+Clicking 'Secure checkout' navigates the user to the 'Checkout' page as expected
+ 
+By using the increment and decrement buttons, and clicking 'Update' I can to amend the quantity of an item in the bag
+
+I can enter a numeric value into the field to update the quantity
+
+I am not able to enter a non-numeric value into the fields
+
+I am not able to update quantity with value outside of range 0-99
+
+I can remove the item from the bag by clicking 'Remove'
+
+I can remove the item from the bag by entering 0 into the quantity field and clicking 'Update'
+
+If amendments are made in the bag subtotal is updated accordingly
+
+Toast success message is present when item is adjusted
+
+Toast success message is present when item is removed
+
+Clicking arrow at bottom of bag navigates user to top of page
+
+#### Checkout
+
+The order summary contains the correct details of the items listed in the bag
+
+If a site visitor the user input fields are all empty
+
+If a site member and details have been previously saved in 'My Profile' the checkout fields are already prefilled
+
+When input is missing in a required field there is an error response
+
+When input format is incorrect the field validation errors are present
+
+If user enters details and checks 'Save this delivery information to my profile', the information is saved to their profile after submission
+
+If user enters details and doesn't check 'Save this delivery information to my profile', the information is not saved to their profile after submission
+ 
+After entering details and clicking 'Checkout' the loading page is present
+
+The user is redirected to the checkout success page after completing order
+
+The checkout success page contains all the correct personal details for the user and items purchased
+ 
+After successful checkout the user receives an email with their order details
+
+After successful checkout the user receives toast success message
+
+User can checkout successfully as both a site user (not logged in) and member (logged in)
+
+#### Blog
+
+If a user clik the blog link, the user will be directed to blog page
+
+If a user click "share our archievement link" on blog page, the user will be directed to a page were the user will share their experince after using our products 
+
+If the user click add blog button the user,s blog will  be posted to the blog page 
+ 
+
+### Profile
+ 
+The user's order history is listed with previous purchases
+ 
+The order history is listed in date descending order with most recent showing first
+ 
+After clicking 'View order details' the user is directed to the 'Checkout Success page' showing all details of their order
+
+If user enters details and clicks 'Update Information' their details are saved to their profile with success toast present
+
+If user edits their details and clicks 'Update Information' their details are updated on their profile with success toast present
+
+No fields on user profile are required allowing user to only fill in desired fields
+
+If user updates their information in their profile this is reflected on the checkout page
+
 
 [Wireframes](https://c14b6c1d-0386-44b5-9bef-ce64ddf62c2b.ws-eu03.gitpod.io/files/download/?id=1b302be3-2173-4eb5-9c35-2a3f7d52b49b)
 
