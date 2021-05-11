@@ -158,9 +158,9 @@ The profile page is specific to each user with a personalised username greeting,
 
 If the user has filled in their profile information, these details will be prefilled at checkout. The user also has the option to tick the save details options on checkout which will automatically save details to their profile page.
 
-##### Sorting and Searching
+#### Sorting and Searching
 
-17. Sort and filter the list of available products
+#### Sort and filter the list of available products
 
 I have added a sort and filter option to the products page to allow a user to easily find what they are looking for. There is a 'Clear all' option at the top of the filter dropdown which allows a user to remove the filter and display all items.
 
