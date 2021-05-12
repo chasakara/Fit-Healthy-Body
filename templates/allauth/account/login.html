@@ -8,6 +8,7 @@
 {% block inner_content %}
 
 <hr>
+<div>
 <h2 class="logo-font mb-4">{% trans "Sign In" %}</h2>
 <hr>
 
@@ -47,6 +48,7 @@ for a {{ site_name }} account and sign in below:{% endblocktrans %}</p>
 {% else %}
 <p>{% blocktrans %}If you dont have account, please create here
 <a href="{{ signup_url }}">Create account</a> first.{% endblocktrans %}</p>
+</div>
 {% endif %}
 
 {% endblock %}
