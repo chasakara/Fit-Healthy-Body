@@ -94,8 +94,6 @@ A table has been used to display the user's order history including order number
 #### Authorisation
 All authorisation pages including register, login and logout have been implemented through Django allauth account. CSS styling has been applied to ensure pages match the sites overall design spec.
 
-Social login has been implemented through Django allauth socialaccount giving the user the option to login through Google, Facebook or Twitter.
-
 ## Testing user stories
 
 Before building my site I set up a list of user stories to help guide the development of different parts of my application. This made it easier to add features and functionality with the end-user in mind by describing the type of user what they want and why. 
