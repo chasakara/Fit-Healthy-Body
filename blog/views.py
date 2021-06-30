@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Blog
 from .forms import BlogForm
 
@@ -15,7 +16,7 @@ def blog_detail(request, blog_id):
 
     return render(request, 'blog/blog_detail.html', {'blog': blog})
 
-
+@login_required
 def add_blog(request):
     """ Add a blog """
     if request.method == 'POST':

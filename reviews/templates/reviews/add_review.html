@@ -19,11 +19,11 @@
             <form method="POST" action="{% url 'add_review' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form }}
-
-                
                 <div class="text-right">
-                    <a class="btn btn-outline-black rounded-0" href="{% url 'all_reviews' %}">Cancel</a>
-                    <button class="btn rounded-0" type="submit">Add review</button>
+                     <button class="btn rounded-0" type="submit">Add review</button>
+                      <a class="btn btn-outline-black rounded-0" href="{% url 'add_review' %}">Cancel</a>
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'review_detail' %}">Cancel</a>
+                   
                 </div>
             </form>
         </div>

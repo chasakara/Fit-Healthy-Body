@@ -37,45 +37,41 @@
                 </p>
                 {% endif %}
                 {% if product.rating %}
-               <p>
-                    <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
-               
-               </p> {% else %}
-               <p>
-                    <small class="text-muted">No Rating</small>
-               
-               </p> {% endif %}
+                <small class="text-muted"><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                {% else %}
+                <small class="text-muted">No Rating</small>
+                {% endif %}
                 {% if request.user.is_superuser %}
                 <small class="ml-3">
-
+                  
                 </small>
                 {% endif %}
-                <div class="container">
-                    <h4><strong>Reviews</strong></h4>
-                    <div class="reviews-wrapper">
-                        {% for review in reviews %}
-                        <div class="notifications">
-                            <p>
-                                <strong>Date:</strong>{{ review.date_added|date:'Y-m-d' }}
-                                {{ review.content }}
-
-                            </p>
+                    <div class="container">
+                        <h4><strong>Reviews</strong></h4>
+                        <div class="reviews-wrapper">
+                            {% for review in reviews %}
+                            <div class="notifications">
+                                <p>
+                                    
+                                </p>
+                                   
+                                   <div>
+                                        {{ review.content }}
+                                   </div>
+                                <p>
+                                     <strong>Date:</strong>{{ review.date_added|date:'Y-m-d' }}
+                                </p>
+                            </div>
+                            {% empty %}
+                            <div class="notification">
+                                There are no reviews added to this product yet
+                            </div>
+                            {% endfor %}
+                            </div>
+                            <div class="notification">
+                        
+                            </div>
                         </div>
-                        {% empty %}
-                        <div class="notification">
-                            There are no reviews added to this product yet
-                        </div>
-                        {% endfor %}
-                    </div>
-                    <div>
-
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'all_reviews' %}">Cancel</a>
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'add_review' %}">Add Review</a>
-                    </div>
-                    <div class="notification">
-
-                    </div>
-                </div>
             </div>
         </div>
     </div>

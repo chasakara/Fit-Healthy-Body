@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from .models import Product, Category, ProductReview
+from .models import Product, Category
 from .forms import ProductForm
 
 # Create your views here.
@@ -71,7 +71,6 @@ def product_detail(request, product_id):
     if request.method == 'POST' and request.user.is_authenticated:
         content = request.POST.get('content', '')
 
-        review = ProductReview.objects.creates(product=product, user=request.user, content=content)
 
         return redirect('product_detail', product_id=product_id)
 
